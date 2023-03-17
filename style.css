@@ -141,20 +141,52 @@ body{
   height: 250px;
   border-radius: 50%;
 }
-
+.home-img{
+  color: white;
+}
 
 /* ===================================== about*/
 
 #about{
-  padding-top: 150px;
-  border: 1px solid rebeccapurple;
-  height: 500px;
+  padding-top: 120px;
+  /* border: 1px solid rebeccapurple; */
+  /* height: 500px; */
   margin-top: 100px;
+  color: white;
+  width: 90%;
+  margin: auto;
 }
 #about>h1{
   text-align: center;
   color: white;
 }
+#about>div{
+  margin-top: 40px;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+  padding: 20px;
+  /* border: 2px solid red; */
+  text-align: center;
+  background-color: rgb(37, 42, 42);
+}
+#aboutdiv{
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  column-gap: 40px;
+  row-gap: 20px;
+}
+#aboutdiv>div{
+  background-color: white;
+  color: black;
+  padding: 5px;
+  font-weight: 7px;
+}
+#about.about.section{
+  color: white;
+}
+#user-detail-intro{
+  color: white;
+}
+/* =======================================skills */
 #skills{
   border: 1px solid rebeccapurple;
   height: 500px;
