@@ -364,7 +364,7 @@ body {
 /* ==================contact */
 #contact {
   border: 1px solid rebeccapurple;
-  height: 500px;
+  /* height: 500px; */
   
 }
 #ccontant{
@@ -383,6 +383,80 @@ body {
 }
 
 
+#contact{
+  /* background-color:  #6dc2b0; */
+  padding: 95px 0;
+  color: #05386b;
+}
+#contact>h1{
+  text-align: center;
+  text-decoration: underline;
+}
+.contact-body{
+  /* border:1px solid black; */
+  width:70%;
+  margin: 60px auto;
+  display: flex;
+  justify-content: space-between;   
+}
+.contact-text{
+  background-color: #a9c6cc;
+  /* border:1px solid black; */
+  width:45%;
+  border-radius: 10px;
+  padding: 30px;
+}
+.contact-text>div{
+  display: flex;
+  /* border:1px solid black; */
+  height: 80%;
+  flex-direction: column;
+  margin-top: 10px;
+  font-size: 19px;
+}
+.contact-text>div>*{
+  margin: 10px 0;
+  color: #05386b;
+  transition: transform .2s;
+}
+.contact-text>div>*:hover{
+  cursor: pointer;
+  transform: scale(1.05);
+}
+#contact-img{
+  /* border:1px solid black; */
+  width:45%;
+}
+#contact-img>img{
+  width:100%;
+  height: 100%;
+  border-radius: 10px;
+}
+/* -------------GITHUB SECTION----------------- */
+#github{
+  background-color:  #D4F1F4;
+  padding:95px 0;
+  color: #05386b;
+}
+#github>h1{
+  text-align: center;
+  text-decoration: underline;
+}
+#github-stats{
+  /* border:1px solid black; */
+  width:85%;
+  margin:70px auto;
+  display: flex;
+  justify-content: space-between;
+}
+#github-stats>div{
+  width:32%;
+  /* border:1px solid red; */
+}
+#github-stats>div>img{
+  width:100%;
+  height:100%;
+}
 
 
 
