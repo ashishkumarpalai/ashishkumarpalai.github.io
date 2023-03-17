@@ -354,21 +354,48 @@ body {
 #graph1{
   padding-top: 80px;
 }
-
-#contact {
-  border: 1px solid rebeccapurple;
-  height: 500px;
-}
-
-#resume {
-  border: 1px solid rebeccapurple;
-  height: 500px;
-}
 #gitstatus{
   color: white;
   text-align: center;
   padding-top: 200px;
 }
+
+
+/* ==================contact */
+#contact {
+  border: 1px solid rebeccapurple;
+  height: 500px;
+  
+}
+#ccontant{
+  margin: auto;
+  width: 90%;
+  text-align: center;
+  color: white;
+  border: 1px solid red;
+  margin-top: 120px;
+}
+
+#cdcontact{
+  width: 90%;
+  margin: auto;
+  display: flex;
+}
+
+
+
+
+
+
+
+
+
+
+#resume {
+  border: 1px solid rebeccapurple;
+  height: 500px;
+}
+
 
 /* #home{
   
