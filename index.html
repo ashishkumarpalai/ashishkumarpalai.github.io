@@ -1,48 +1,94 @@
 <!DOCTYPE html>
 <!-- Created By CodingNepal -->
 <html lang="en" dir="ltr">
-   <head>
-      <meta charset="utf-8">
-      <title>Ashish</title>
-      <link rel="stylesheet" href="style.css">
-      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
-      <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   </head>
-   <body>
-      <nav id="nav-menu">
-         <div class="logo">
+
+<head>
+    <meta charset="utf-8">
+    <title>Ashish</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- calender -->
+    <script src="https://unpkg.com/github-calendar@latest/dist/github-calendar.min.js"></script>
+    <link rel="stylesheet" href="https://unpkg.com/github-calendar@latest/dist/github-calendar-responsive.css" />
+</head>
+
+<body>
+    <nav id="nav-menu">
+        <div class="logo">
             Ashish
-         </div>
-         <input type="checkbox" id="click">
-         <label for="click" class="menu-btn">
-         <i class="fas fa-bars"></i>
-         </label>
-         <ul>
-            <li><a class="active nav-link home" href="#home" >Home</a></li>
-            <li><a href="#about"  class="about section nav-link about">About</a></li>
-            <li><a href="#skills"  class="nav-link skills">Skills</a></li>
-            <li><a href="#projects"  class="nav-link projects">Projects</a></li>
-            <li><a href="#contact"  class="nav-link contact">Contact</a></li>
-            <li><a href="#resume"  class="nav-link resume">Resume</a></li>
-         </ul>
-      </nav>
-      <div id="home">
-        home
-      </div>
-      <div id="about">
-        about
-      </div>
-      <div id="skills">
+        </div>
+        <input type="checkbox" id="click">
+        <label for="click" class="menu-btn">
+            <i class="fas fa-bars"></i>
+        </label>
+        <ul>
+            <li><a class="active nav-link home" href="#home">Home</a></li>
+            <li><a href="#about" class="about section nav-link about">About</a></li>
+            <li><a href="#skills" class="nav-link skills">Skills</a></li>
+            <li><a href="#projects" class="nav-link projects">Projects</a></li>
+            <li><a href="#contact" class="nav-link contact">Contact</a></li>
+            <li><a href="#resume" class="nav-link resume">Resume</a></li>
+        </ul>
+    </nav>
+    <br>
+    <!-- ==============home section ============-->
+    <div id="home">
+        <img src="./image/PhotoStudio_1666032723766.jpg" alt="home img">
+        <h1>Hi, I'm Ashish</h1>
+        <br>
+        <h3>I'm Full Stack Developer</h3>
+        <h3>Always enthusiastic to learn and would love to work on new technologies.</h3>
+
+    </div>
+    <!-- ==============about section ============-->
+    <div id="about">
+        <h1>About Me</h1>
+    </div>
+    <!-- ==============skills section ============-->
+    <div id="skills">
         skills
-      </div>
-      <div id="projects">
+    </div>
+    <!-- ==============projects section ============-->
+    <div id="projects">
         projects
-      </div>
-      <div id="contact">
+    </div>
+    <!-- ======================================================calender=============================== -->
+    <div class="react-activity-calendar">
+        <!-- Loading stuff -->
+        Loading the data just for you.
+    </div>
+    <p >
+        <div id="github-streak-stats" align=center>
+          <a href="https://github.com/ashishkumarpalai/github-readme-streak-stats" title="Go to Source">
+            <img  width=390 src="https://github-readme-streak-stats.herokuapp.com/?user=ashishkumarpalai&theme=react&border=61dafb&hide_border=true" alt="ashishkumarpalai" />
+          </a>
+          <a id="github-top-langs" href="https://github.com/ashishkumarpalai/github-readme-stats">
+            <img width=390  src="https://github-readme-stats.vercel.app/api/top-langs/?username=ashishkumarpalai&hide=c%23,powershell,Mathematica,Ruby,Objective-C,Objective-C%2b%2b,Cuda&title_color=61dafb&text_color=ffffff&icon_color=61dafb&bg_color=20232a&langs_count=8&layout=compact&border_color=61dafb&hide_border=true" />
+          </a>
+          <a id="github-stats-card" href="https://github.com/ashishkumarpalai/github-readme-stats" title="Go to Source">
+            <img  width=390 src="https://github-readme-stats.vercel.app/api?username=ashishkumarpalai&show_icons=true&theme=react&border_color=61dafb&hide_border=true" />
+          </a>
+        </div>
+        <br>
+        
+        <img  src="https://github-readme-activity-graph.cyclic.app/graph?username=ashishkumarpalai&theme=react-dark&bg_color=20232a&hide_border=true" width="100%"/>
+      </p>
+    <!-- ==============contact section ============-->
+    <div id="contact">
         contacts
-      </div>
-      <div id="resume">
+    </div>
+    <!-- ==============resume section ============-->
+    <div id="resume">
         resume
-      </div>
-   </body>
+    </div>
+</body>
 </html>
+
+
+<!-- =====================================================calender -->
+<script>
+    GitHubCalendar(".react-activity-calendar", "ashishkumarpalai");
+    // or enable responsive functionality
+    GitHubCalendar(".react-activity-calendar", "ashishkumarpalai", { responsive: true });
+</script>

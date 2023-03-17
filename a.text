@@ -1,0 +1,8 @@
+# Phone
+only screen and (max-width:320px)
+
+# Tablet
+only screen and (min-width:600px) and (max-width:768px)
+
+# Desktop
+only screen and (min-width:769px)
