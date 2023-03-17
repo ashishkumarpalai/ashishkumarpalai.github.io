@@ -341,7 +341,7 @@ body {
 
 /* ==================calender */
 #calendercss {
-  padding-top: 200px;
+  padding-top: 20px;
   width: 90%;
   margin: auto;
   color: white;
@@ -364,7 +364,11 @@ body {
   border: 1px solid rebeccapurple;
   height: 500px;
 }
-
+#gitstatus{
+  color: white;
+  text-align: center;
+  padding-top: 200px;
+}
 
 /* #home{
   
