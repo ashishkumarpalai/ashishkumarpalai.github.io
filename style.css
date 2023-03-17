@@ -1,13 +1,14 @@
 @import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap');
-*{
+
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   font-family: 'Poppins', sans-serif;
-  
-} 
 
-nav{
+}
+
+nav {
   display: flex;
   height: 80px;
   width: 100%;
@@ -16,30 +17,35 @@ nav{
   justify-content: space-between;
   padding: 0 50px 0 100px;
   flex-wrap: wrap;
-  
+
 }
+
 #nav-menu {
   list-style-type: none;
   position: sticky;
   top: 0;
   margin: 0;
   padding: 20px;
- 
+
 }
-nav .logo{
+
+nav .logo {
   color: #fff;
   font-size: 35px;
   font-weight: 600;
 }
-nav ul{
+
+nav ul {
   display: flex;
   flex-wrap: wrap;
   list-style: none;
 }
-nav ul li{
+
+nav ul li {
   margin: 0 5px;
 }
-nav ul li a{
+
+nav ul li a {
   color: #f2f2f2;
   text-decoration: none;
   font-size: 18px;
@@ -49,33 +55,40 @@ nav ul li a{
   letter-spacing: 1px;
   transition: all 0.3s ease;
 }
+
 nav ul li a.active,
-nav ul li a:hover{
+nav ul li a:hover {
   color: #111;
   background: #fff;
 }
-nav .menu-btn i{
+
+nav .menu-btn i {
   color: #fff;
   font-size: 22px;
   cursor: pointer;
   display: none;
 }
-input[type="checkbox"]{
+
+input[type="checkbox"] {
   display: none;
 }
-@media (max-width: 1000px){
-  nav{
+
+@media (max-width: 1000px) {
+  nav {
     padding: 0 40px 0 50px;
   }
 }
+
 @media (max-width: 920px) {
-  nav .menu-btn i{
+  nav .menu-btn i {
     display: block;
   }
-  #click:checked ~ .menu-btn i:before{
+
+  #click:checked~.menu-btn i:before {
     content: "\f00d";
   }
-  nav ul{
+
+  nav ul {
     position: fixed;
     top: 80px;
     left: -100%;
@@ -86,30 +99,36 @@ input[type="checkbox"]{
     display: block;
     transition: all 0.3s ease;
   }
-  #click:checked ~ ul{
+
+  #click:checked~ul {
     left: 0;
   }
-  nav ul li{
+
+  nav ul li {
     width: 100%;
     margin: 40px 0;
   }
-  nav ul li a{
+
+  nav ul li a {
     width: 100%;
     margin-left: -100%;
     display: block;
     font-size: 20px;
     transition: 0.6s cubic-bezier(0.68, -0.55, 0.265, 1.55);
   }
-  #click:checked ~ ul li a{
+
+  #click:checked~ul li a {
     margin-left: 0px;
   }
+
   nav ul li a.active,
-  nav ul li a:hover{
+  nav ul li a:hover {
     background: none;
     color: cyan;
   }
 }
-.content{
+
+.content {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -120,34 +139,38 @@ input[type="checkbox"]{
   padding: 0 30px;
   color: #1b1b1b;
 }
-.content div{
+
+.content div {
   font-size: 40px;
   font-weight: 700;
 }
+
 /* ===================================== home*/
-body{
+body {
   background-color: #161627;
 }
 
-#home{
+#home {
   padding-top: 150px;
   width: 90%;
   margin: auto;
   text-align: center;
   color: white;
 }
-#home>img{
+
+#home>img {
   width: 270px;
   height: 255px;
   border-radius: 50%;
 }
-.home-img{
-  color: white;
+
+.home-img {
+  border: 2px solid red;
 }
 
 /* ===================================== about*/
 
-#about{
+#about {
   padding-top: 178px;
   /* border: 1px solid rebeccapurple; */
   /* height: 500px; */
@@ -156,11 +179,13 @@ body{
   width: 90%;
   margin: auto;
 }
-#about>h1{
+
+#about>h1 {
   text-align: center;
   color: white;
 }
-#about>div{
+
+#about>div {
   margin-top: 40px;
   box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
   padding: 20px;
@@ -168,38 +193,45 @@ body{
   text-align: center;
   background-color: rgb(37, 42, 42);
 }
-#aboutdiv{
+
+#aboutdiv {
   display: grid;
-  grid-template-columns: repeat(3,1fr);
+  grid-template-columns: repeat(3, 1fr);
   column-gap: 40px;
   row-gap: 20px;
 }
-#aboutdiv>div{
+
+#aboutdiv>div {
   background-color: white;
   color: black;
   padding: 5px;
   font-weight: 7px;
 }
-#about.about.section{
+
+#about.about.section {
   color: white;
 }
-#user-detail-intro{
+
+#user-detail-intro {
   color: white;
 }
+
 /* =======================================skills */
 
 
-#skills{
-  border: 1px solid rebeccapurple;
+#skills {
+  /* border: 1px solid rebeccapurple; */
   /* height: 500px; */
   padding-top: 100px;
   margin-top: 100px;
   color: white;
   text-align: center;
 }
-#skills>div{
+
+#skills>div {
   padding-top: 50px;
 }
+
 #skills .container {
   display: flex;
   flex-wrap: wrap;
@@ -237,33 +269,101 @@ body{
 }
 
 @media screen and (max-width: 768px) {
-  #skills{
+  #skills {
     width: 90%;
     margin: auto;
   }
+
   #skills .container {
     flex-direction: column;
   }
-  
+
   .skills-card {
     width: 100%;
   }
+
+  
 }
+
 /* =======================================projects */
 
-#projects{
-  border: 1px solid rebeccapurple;
-  height: 500px;
+#projects {
+  /* border: 1px solid rebeccapurple; */
+  /* height: 500px; */
+  color: white;
+  text-align: center;
+  width: 90%;
+  margin: auto;
+  padding-top: 100px;
 }
-#contact{
-  border: 1px solid rebeccapurple;
-  height: 500px;
+
+#projectsdiv {
+  padding-top: 50px;
+  width: 100%;
+  display: grid;
+  /* flex-wrap: wrap; */
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
 }
-#resume{
+
+.project-card {
+  width: 100%;
+  border: 1px solid red;
+  padding: 15px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+  background-color: black
+}
+
+.project-card>img {
+  width: 100%;
+}
+
+.project-link {
+  width: 100%;
+  height: auto;
+  /* border:2px solid cyan; */
+  display: flex;
+  justify-content: space-around;
+  /* border: 1px solid blue; */
+
+}
+
+.project-link a {
+  display: inline-block;
+  color: #FFF;
+  text-decoration: none;
+  background: rgb(24, 95, 175);
+  border-radius: 5px;
+  padding: 10px;
+}
+
+
+
+/* ==================calender */
+#calendercss {
+  padding-top: 200px;
+  width: 90%;
+  margin: auto;
+  color: white;
+}
+#graph{
+  padding-top: 50px;
+  width: 90%;
+  margin: auto;
+}
+#graph1{
+  padding-top: 80px;
+}
+
+#contact {
   border: 1px solid rebeccapurple;
   height: 500px;
 }
 
+#resume {
+  border: 1px solid rebeccapurple;
+  height: 500px;
+}
 
 
 /* #home{
@@ -291,8 +391,8 @@ body{
     width: 90%;
     margin: auto;
     /* height: 600px; */
-  /* } */
-  /* #home>div{
+/* } */
+/* #home>div{
     width: 100%;
     height: 100%;
   }
