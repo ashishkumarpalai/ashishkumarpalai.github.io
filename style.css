@@ -167,7 +167,23 @@ body {
 .home-img {
   border: 2px solid red;
 }
-
+#resume-button-1 {
+  font-size: 20px;
+  /* height: 0px; */
+  color: white;
+  background-color: red;
+  border-radius: 5px;
+  padding: 5px;
+}
+#resume-button-2{
+  margin-top: 10px;
+  font-size: 20px;
+  /* height: 0px; */
+  color: white;
+  background-color: red;
+  border-radius: 5px;
+  padding: 5px;
+}
 /* ===================================== about*/
 
 #about {
