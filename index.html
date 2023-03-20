@@ -31,7 +31,8 @@
             <li><a href="#projects" class="nav-link projects">Projects</a></li>
             <li><a href="#contact" class="nav-link contact">Contact</a></li>
             <!-- <li></li> -->
-            <li><button id="resume-button-1"><a href="image/Ashish-kumar-palai-Resume.pdf" download target="_blank" class="nav-link resume" id="resume-link-1"> Resume</a></button></li>
+            <li><button id="resume-button-1"><a href="image/Ashish-kumar-palai-Resume.pdf" download target="_blank"
+                        class="nav-link resume" id="resume-link-1"> Resume</a></button></li>
         </ul>
     </nav>
     <br>
@@ -45,7 +46,7 @@
 
     </div>
     <!-- ==============about section ============-->
-    <div id="about">
+    <div id="about" class="about section">
         <h1>About Me</h1>
         <div class="about section">
             <h1 id="user-detail-name">Ashish Kumar Palai</h1>
@@ -55,7 +56,8 @@
                 1200+ hours of practical experience building numerous websites and applications. Solved more than 500
                 data structure questions. Strongly interested in obtaining a backend developer position to create
                 impactful and scalable products in Javascript and NodeJs.</p>
-                <button id="resume-button-2"><a href="image/Ashish-kumar-palai-Resume.pdf" download target="_blank" class="nav-link resume" id="resume-link-2"> Resume</a></button>
+            <button id="resume-button-2"><a href="image/Ashish-kumar-palai-Resume.pdf" download target="_blank"
+                    class="nav-link resume" id="resume-link-2"> Resume</a></button>
         </div>
         <div id="aboutdiv">
             <div>
@@ -211,7 +213,7 @@
     </p>
     <!-- ===========================contact section ============-->
     <div id="contact">
-        <h1>Contact me&nbsp;<i class="fa-solid fa-address-book"></i></h1>
+        <h1>Contact me&nbsp;</h1>
         <div class="contact-body">
             <div id="contact-img">
                 <img alt="contact" src="./image/PhotoStudio_1666032723766.jpg" />
@@ -276,11 +278,11 @@
     </div> -->
 
     <!-- ==============resume section ============-->
-    <div id="resume">
+    <!-- <div id="resume">
         <h1>Resume<i class="fa-solid fa-magnifying-glass"></i>
     </div>
     </h1>
-    </div>
+    </div> -->
 </body>
 
 </html>
@@ -293,8 +295,8 @@
     GitHubCalendar(".react-activity-calendar", "ashishkumarpalai", { responsive: true });
 </script>
 <script>
-    let resumeBtn=document.querySelector("#resume-link-2")
-    resumeBtn.addEventListener("click",()=>{
+    let resumeBtn = document.querySelector("#resume-link-2")
+    resumeBtn.addEventListener("click", () => {
         window.open("https://drive.google.com/file/d/17ApDObPiuqxZgTDDTFo9PAfFKLnzbFxe/view?usp=share_link")
     })
 </script>
