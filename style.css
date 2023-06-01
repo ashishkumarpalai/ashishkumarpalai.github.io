@@ -8,6 +8,10 @@
 
 }
 
+#hamburgger {
+  display: none;
+}
+
 nav {
   display: flex;
   height: 80px;
@@ -56,7 +60,7 @@ nav ul li a {
   transition: all 0.3s ease;
 }
 
-nav ul li a.active,
+/* nav ul li a.active, */
 nav ul li a:hover {
   color: #111;
   background: #fff;
@@ -77,6 +81,8 @@ input[type="checkbox"] {
   nav {
     padding: 0 40px 0 50px;
   }
+
+  
 }
 
 @media (max-width: 920px) {
@@ -87,7 +93,9 @@ input[type="checkbox"] {
   #click:checked~.menu-btn i:before {
     content: "\f00d";
   }
-
+  #hamburgger {
+    display: block;
+  }
   nav ul {
     position: fixed;
     top: 80px;
@@ -167,6 +175,7 @@ body {
 .home-img {
   border: 2px solid red;
 }
+
 #resume-button-1 {
   font-size: 20px;
   /* height: 0px; */
@@ -175,7 +184,8 @@ body {
   border-radius: 5px;
   padding: 5px;
 }
-#resume-button-2{
+
+#resume-button-2 {
   margin-top: 10px;
   font-size: 20px;
   /* height: 0px; */
@@ -184,7 +194,8 @@ body {
   border-radius: 5px;
   padding: 5px;
 }
-#resume-link-1{
+
+#resume-link-1 {
   padding: 5px;
   font-size: 20px;
   font-weight: 5px;
@@ -193,10 +204,12 @@ body {
   background-color: red;
   text-decoration: none;
 }
-#resume-link-2{
+
+#resume-link-2 {
   text-decoration: none;
   color: white;
 }
+
 /* ===================================== about*/
 
 #about {
@@ -303,6 +316,10 @@ body {
     margin: auto;
   }
 
+  #hamburgger {
+    display: block;
+  }
+
   #skills .container {
     flex-direction: column;
   }
@@ -311,7 +328,7 @@ body {
     width: 100%;
   }
 
-  
+
 }
 
 /* =======================================projects */
@@ -337,7 +354,7 @@ body {
 
 .project-card {
   width: 100%;
-  border: 1px solid red;
+  /* border: 1px solid red; */
   padding: 15px;
   box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
   background-color: black
@@ -375,15 +392,18 @@ body {
   margin: auto;
   color: white;
 }
-#graph{
+
+#graph {
   padding-top: 50px;
   width: 90%;
   margin: auto;
 }
-#graph1{
+
+#graph1 {
   padding-top: 80px;
 }
-#gitstatus{
+
+#gitstatus {
   color: white;
   text-align: center;
   padding-top: 200px;
@@ -395,7 +415,7 @@ body {
   border: 1px solid rebeccapurple;
   height: 500px;
 } */
-#ccontant{
+#ccontant {
   margin: auto;
   width: 90%;
   text-align: center;
@@ -404,38 +424,42 @@ body {
   margin-top: 120px;
 }
 
-#cdcontact{
+#cdcontact {
   width: 90%;
   margin: auto;
   display: flex;
 }
 
 
-#contact{
+#contact {
   /* background-color:  #6dc2b0; */
   padding: 95px 0;
   color: #05386b;
 }
-#contact>h1{
+
+#contact>h1 {
   text-align: center;
   text-decoration: underline;
   color: white;
 }
-.contact-body{
+
+.contact-body {
   /* border:1px solid black; */
-  width:70%;
+  width: 70%;
   margin: 60px auto;
   display: flex;
-  justify-content: space-between;   
+  justify-content: space-between;
 }
-.contact-text{
+
+.contact-text {
   background-color: #a9c6cc;
   /* border:1px solid black; */
-  width:45%;
+  width: 45%;
   border-radius: 10px;
   padding: 30px;
 }
-.contact-text>div{
+
+.contact-text>div {
   display: flex;
   /* border:1px solid black; */
   height: 80%;
@@ -443,70 +467,80 @@ body {
   margin-top: 10px;
   font-size: 19px;
 }
-.contact-text>div>*{
+
+.contact-text>div>* {
   margin: 10px 0;
   color: #05386b;
   transition: transform .2s;
 }
-.contact-text>div>*:hover{
+
+.contact-text>div>*:hover {
   cursor: pointer;
   transform: scale(1.05);
 }
-#contact-img{
+
+#contact-img {
   /* border:1px solid black; */
-  width:45%;
+  width: 45%;
 }
+
 /* #contact-img>img{
   width:100%;
   height: 100%;
   border-radius: 10px;
 } */
-#contact-img form{
+#contact-img form {
   width: 100%;
   /* border: 1px solid red; */
 }
-#contact-img form input{
+
+#contact-img form input {
   width: 100%;
   margin-top: 10px;
   height: 50px;
   font-size: medium;
   padding-left: 10px;
 }
-#contact-img h2{
+
+#contact-img h2 {
   color: white;
 }
-#contact-img button{
+
+#contact-img button {
   margin-top: 10px;
   height: 40px;
   width: 100px;
-  border-radius: 5px ;
+  border-radius: 5px;
   background-color: red;
   color: white;
 }
+
 /* -------------GITHUB SECTION----------------- */
-#github{
-  background-color:  #D4F1F4;
-  padding:95px 0;
+#github {
+  background-color: #D4F1F4;
+  padding: 95px 0;
   color: #05386b;
 }
-#github>h1{
+
+#github>h1 {
   text-align: center;
   text-decoration: underline;
 }
-#github-stats{
+
+#github-stats {
   /* border:1px solid black; */
-  width:85%;
-  margin:70px auto;
+  width: 85%;
+  margin: 70px auto;
   display: flex;
   justify-content: space-between;
 }
-#github-stats>div{
-  width:32%;
+
+#github-stats>div {
+  width: 32%;
   /* border:1px solid red; */
 }
-#github-stats>div>img{
-  width:100%;
-  height:100%;
+
+#github-stats>div>img {
+  width: 100%;
+  height: 100%;
 }
-
-
