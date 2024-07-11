@@ -27,15 +27,17 @@
             <i class="fas fa-bars" style="color: white" id="hamburgger"></i>
         </label>
         <ul>
-            <li><a class="active nav-link home" href="#home">Home</a></li>
-            <li><a href="#about" class="about section nav-link about">About</a></li>
-            <li><a href="#skills" class="nav-link skills">Skills</a></li>
-            <li><a href="#projects" class="nav-link projects">Projects</a></li>
-            <li><a href="#contact" class="nav-link contact">Contact</a></li>
-            <!-- <li></li> -->
+            <li><a class="active nav-link home" href="#home" onclick="toggleCheckbox()">Home</a></li>
+            <li><a href="#about" class="about section nav-link about" onclick="toggleCheckbox()">About</a></li>
+            <li><a href="#skills" class="nav-link skills" onclick="toggleCheckbox()">Skills</a></li>
+            <li><a href="#projects" class="nav-link projects" onclick="toggleCheckbox()">Projects</a></li>
+            <li><a href="#contact" class="nav-link contact" onclick="toggleCheckbox()">Contact</a></li>
             <li><button id="resume-button-1"><a href="image/Ashish-kumar-palai-Resume.pdf" download target="_blank"
-                        class="nav-link resume wopen" id="resume-link-1"> Resume</a></button></li>
+                        class="nav-link resume wopen" id="resume-link-1" onclick="toggleCheckbox()">Resume</a></button>
+            </li>
         </ul>
+
+
     </nav>
     <br>
     <!-- ==============home section ============-->
@@ -176,7 +178,9 @@
             <div class="project-card">
                 <img src="./image/cinematrix.png" alt="">
                 <h2 class="project-title">CineMatrix</h2>
-                <p class="project-description">A user-friendly movie management system that simplifies cinema operations. Effortlessly handle movies, shows, events, and user data for seamless organization. Streamline your cinema business with ease.</p>
+                <p class="project-description">A user-friendly movie management system that simplifies cinema
+                    operations. Effortlessly handle movies, shows, events, and user data for seamless organization.
+                    Streamline your cinema business with ease.</p>
                 <br>
                 <p class="project-tech-stack">Tech Stack :-Github | Responsive Web Design | JavaScript | HTML5 |
                     CSS3 | MongoDB | RESTful APIs | Python | Flask
@@ -224,11 +228,12 @@
                         link</a>
                 </div>
             </div>
-     
+
             <div class="project-card">
                 <img src="./image/timeframe.png" alt="">
                 <h2 class="project-title">Time Frame</h2>
-                <p class="project-description">A time tracker with additional workforce management features that will help you develop a high-performing team that smashes goals every time..</p>
+                <p class="project-description">A time tracker with additional workforce management features that will
+                    help you develop a high-performing team that smashes goals every time..</p>
                 <br>
                 <p class="project-tech-stack">Tech Stack :-HTML | CSS | JAVASCRIPT | Express | MongoDB Atlas | NodeJs
                 </p>
@@ -244,7 +249,10 @@
             <div class="project-card">
                 <img src="./image/vetspot.png" alt="">
                 <h2 class="project-title">Vetspot</h2>
-                <p class="project-description">The Veterinary System Website is a comprehensive solution designed to streamline and optimize the operations of a veterinary clinic. It offers features such as patient management, appointment scheduling, billing and invoicing, inventory management, and reporting and analytics</p>
+                <p class="project-description">The Veterinary System Website is a comprehensive solution designed to
+                    streamline and optimize the operations of a veterinary clinic. It offers features such as patient
+                    management, appointment scheduling, billing and invoicing, inventory management, and reporting and
+                    analytics</p>
                 <br>
                 <p class="project-tech-stack">Tech Stack :-HTML | CSS | JAVASCRIPT | Express | MongoDB Atlas | NodeJs
                 </p>
@@ -305,12 +313,12 @@
             <div class="contact-text">
                 <h2>Get in Touch</h2>
                 <div>
-                    <a id="contact-email"><i class="fa-solid fa-envelope"></i>  ashishkumarpalai2000@gmail.com</a>
+                    <a id="contact-email"><i class="fa-solid fa-envelope"></i> ashishkumarpalai2000@gmail.com</a>
                     <a id="contact-phone"><i class="fa-solid fa-phone"></i> +91 8917299117</a>
                     <a target="_blank" href="https://github.com/ashishkumarpalai" id="contact-github"><i
-                            class="fa-brands fa-github"></i>  ashishkumarpalai</a>
+                            class="fa-brands fa-github"></i> ashishkumarpalai</a>
                     <a target="_blank" href="https://www.linkedin.com/in/ashishkumarpalai/" id="contact-linkedin"><i
-                            class="fa-brands fa-linkedin"></i>  ashishkumarpalai</a>
+                            class="fa-brands fa-linkedin"></i> ashishkumarpalai</a>
                 </div>
             </div>
         </div>
@@ -342,3 +350,9 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/js/all.min.js"
     integrity="sha512-fD9DI5bZwQxOi7MhYWnnNPlvXdp/2Pj3XSTRrFs5FQa4mizyGLnJcN6tuvUS6LbmgN1ut+XGSABKvjN0H6Aoow=="
     crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script>
+    function toggleCheckbox() {
+        const checkbox = document.getElementById('click');
+        checkbox.checked = !checkbox.checked;
+    }
+</script>
